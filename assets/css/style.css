@@ -27,6 +27,10 @@ p {
 }
 
 header {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    width: 100%;
     background-color: var(--lightgray);
     border-style: solid;
     text-align:start 
@@ -41,7 +45,7 @@ header .page-title {
 header .my-picture{
     display: inline-block;
     position: absolute;
-    height: 13%;
+    height: 60%;
     top: 10px;
     right: 25px;
 }
@@ -81,10 +85,27 @@ header .navegation-bar {
     color: var(--orange);
 
 }
+/* main section */
+main .display-section{ 
+   width: 80%;
+   height: auto; 
+   margin: 0% 10%; 
+
+}
+
+.display-section .workstation{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+}
 
 /* CSS for footer section */
 
 footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     background-color: var(--lightgray);
     border-style: solid;
     padding: 0px 25px;
@@ -96,6 +117,6 @@ footer .contact-links{
 }
 
 .smlink{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
