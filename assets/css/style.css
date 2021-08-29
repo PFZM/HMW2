@@ -12,13 +12,17 @@
  --orange: #ffa500;   
 }
 
+/* background set for body and font from Google fonts */
 body {
     background-color: var(--darkgray);
     font-family: 'Source Code Pro', monospace;
 }
 
+/* color set for "h" & "p" elements */
 h1,
-h2 {
+h2,
+h3,
+p {
     color: var(--white);
 }
 
@@ -28,6 +32,7 @@ header {
     text-align:start 
 }
 
+/* CSS style for page title section in the header */
 header .page-title {
     padding: 0px 25px;
 
@@ -41,6 +46,8 @@ header .my-picture{
     right: 25px;
 }
 
+
+/* CSS style for navegation bar and elements */
 header .navegation-bar {
     padding: 0 px;
     margin: 0px;
@@ -73,4 +80,22 @@ header .navegation-bar {
 .navegation-bar a:hover{
     color: var(--orange);
 
+}
+
+/* CSS for footer section */
+
+footer {
+    background-color: var(--lightgray);
+    border-style: solid;
+    padding: 0px 25px;
+}
+
+footer .contact-links{
+    display: flex;
+    justify-content:space-around;
+}
+
+.smlink{
+    height: 50px;
+    width: 50px;
 }
