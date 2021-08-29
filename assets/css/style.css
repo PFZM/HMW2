@@ -3,3 +3,74 @@
     box-sizing: border-box;
 }
 
+/* Selection of variables */
+:root{
+ --darkgray: #121212;    
+ --white: white;
+ --lightgray: #3d3d3d;
+ --lightred: #b63c3c; 
+ --orange: #ffa500;   
+}
+
+body {
+    background-color: var(--darkgray);
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1,
+h2 {
+    color: var(--white);
+}
+
+header {
+    background-color: var(--lightgray);
+    border-style: solid;
+    text-align:start 
+}
+
+header .page-title {
+    padding: 0px 25px;
+
+}
+
+header .my-picture{
+    display: inline-block;
+    position: absolute;
+    height: 13%;
+    top: 10px;
+    right: 25px;
+}
+
+header .navegation-bar {
+    padding: 0 px;
+    margin: 0px;
+    border-top-style: dashed;
+}
+
+.navegation-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navegation-bar ul li {
+    list-style: none;
+}
+
+.navegation-bar a {
+    color: var(--lightred);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.navegation-bar a::before{
+    content: "<";
+}
+
+.navegation-bar a::after{
+    content: "/>";
+}
+
+.navegation-bar a:hover{
+    color: var(--orange);
+
+}
