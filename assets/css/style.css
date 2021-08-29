@@ -88,11 +88,11 @@ header .navegation-bar {
 /* main section */
 main .display-section{ 
    width: 80%;
-   height: auto; 
+   /* height: auto;  */
    margin: 0% 10%; 
-
 }
 
+/* This is the image that appeart when the user enter the website */
 .display-section .workstation{
     display: block;
     margin-left: auto;
@@ -100,10 +100,19 @@ main .display-section{
     max-width: 75%;
 }
 
+/* .about-me{
+    display: none;
+}
+
+.about-mel:active .about-me{
+    display: block;
+} */
+
+
 /* CSS for footer section */
 
 footer {
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     background-color: var(--lightgray);
