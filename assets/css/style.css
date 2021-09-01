@@ -87,9 +87,14 @@ header .navegation-bar {
 }
 /* main section */
 
-main{
-    position: relative;
-}
+article::before {
+    display: block;
+    content: ' ';
+    margin-top: -180px;
+    height: 180px;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
 main .display-section{ 
    width: 80%;
@@ -131,6 +136,24 @@ main .display-section{
     margin: 0px 30px;
 }
 
+/* Projects article */
+
+.projects-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.projects-container img{
+    width: 20em;
+    height: 10em;
+    padding: 1em;
+}
+
+.projects-container a img:hover{
+    width: 30em;
+    height: 20em; 
+}
 
 /* CSS for footer section */
 
@@ -146,9 +169,22 @@ footer {
 footer .contact-links{
     display: flex;
     justify-content:space-around;
+    flex-wrap: wrap;
 }
 
 .smlink{
     height: 40px;
     width: 40px;
+}
+
+/* Media queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
 }

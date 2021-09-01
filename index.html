@@ -17,13 +17,17 @@
 <!-- Header section with name, image and nav bar -->
 <header>
     <section class="page-title">
-    <h1>Pablo Zambrano | Portfolio</h1>
-    <h2>Full Stack Developer - <span style="font-style: italic;">In progress</span>-</h2>
-    <img class="my-picture" src="assets/images/IMG1 - myself.jpeg" alt="Pablo Picture">
-    </section>    
+       <div>
+         <h1>Pablo Zambrano | Portfolio</h1>
+         <h2>Full Stack Developer - <span style="font-style: italic;">In progress</span>-</h2>
+      </div>
+      <div>
+          <img class="my-picture" src="assets/images/IMG1 - myself.jpeg" alt="Pablo Picture">
+      </div> 
+   </section>    
 
  <!-- Nav bar: About me, Skills, Projects, Contact    -->
- <nav class=navegation-bar>
+ <nav class="navegation-bar">
     <ul>
         <li><a href=#about-me>ABOUT ME</a></li>
         <li><a href=#skills>SKILLS</a></li>
@@ -35,14 +39,14 @@
 
 </header>
 
-<!-- Main section to have: a main image when enter the website, when use click on the nav links, the image disspear and an article appears-->
+<!-- Main section-->
 <main>
 
     <section class="display-section">
         <!-- This is the image that appeart when the user enter the website     -->
         <img class="workstation" src="assets/images/workstation.jpg" alt="workstation">
 
-        <article id=about-me>
+        <article id="about-me">
             <h2>About Me:</h2>
                <p>I’m currently going through the Monash University Coding Bootcamp to become a Full Stack Developer.
                   I am originally from Colombia and currently living in Melbourne, Australia. My career background is in Hospitality where
@@ -53,7 +57,7 @@
                   I look forward to connect with you.</p>
          </article>
 
-         <article id=skills>
+         <article id="skills">
             <h2>Skills</h2>
 
                <div class="skills2">   
@@ -81,22 +85,25 @@
                </div>     
          </article>
 
-         <article id=projects>
+         <article id="projects">
             <h2>Projects</h2>
-            <p>projects</p>
+            <div class="projects-container">
+               <div>
+                  <p>Project 1 - Coming soon!</p>  
+                  <a href=""><img src="assets/images/project1.jpg" alt="Project 1"> </a>
+               </div>
+               <div>
+                  <p>Project 2 - Coming soon!</p>  
+               <a href=""><img src="assets/images/project2.jpg" alt="Project 1"> </a>
+               </div>
+            </div>   
          </article>
 
-         <article id=contact>
+         <article id="contact">
             <h2>Contact form</h2>
-            <p>projects</p>
-          
-            
-            
+             
          </article>
-
-
     </section>
-
 
 </main>
 
@@ -106,7 +113,7 @@
 
   <h3>Connect with me!</h3>  
 
-  <section class=contact-links>
+  <section class="contact-links">
     <a  href="https://github.com/PFZM"> <img class="smlink" src="assets/images/github.png" alt="https://github.com/PFZM"></a>
     <a  href="https://www.linkedin.com/in/pablo-zambrano/"> <img class="smlink" src="assets/images/linkedin.png" alt="https://www.linkedin.com/in/pablo-zambrano/"></a>
     <a  href="mailto:pfzm@hotmail.com"> <img class="smlink" src="assets/images/email.png" alt="mailto:pfzm@hotmail.com"></a>
