@@ -86,6 +86,11 @@ header .navegation-bar {
 
 }
 /* main section */
+
+main{
+    position: relative;
+}
+
 main .display-section{ 
    width: 80%;
    /* height: auto;  */
@@ -100,13 +105,31 @@ main .display-section{
     max-width: 75%;
 }
 
-/* .about-me{
-    display: none;
+.display-section  h2{
+    text-decoration: underline;
+} 
+
+#about-me, #skills, #projects, #contact{
+    border-bottom-style: dashed;
+    padding-bottom:10px;
+    
 }
 
-.about-mel:active .about-me{
-    display: block;
-} */
+/* Skills article */
+ 
+#skills li{
+    color: var(--white);
+}
+
+.skills2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.skills2 > section{
+    margin: 0px 30px;
+}
 
 
 /* CSS for footer section */
