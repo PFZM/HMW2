@@ -1,21 +1,21 @@
 /* Property to inlude the padding and border in element's total width and height */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Selection of variables */
-:root{
- --darkgray: #121212;    
- --white: white;
- --lightgray: #3d3d3d;
- --lightred: #b63c3c; 
- --orange: #ffa500;   
+:root {
+  --darkgray: #121212;
+  --white: white;
+  --lightgray: #3d3d3d;
+  --lightred: #b63c3c;
+  --orange: #ffa500;
 }
 
 /* background set for body and font from Google fonts */
 body {
-    background-color: var(--darkgray);
-    font-family: 'Source Code Pro', monospace;
+  background-color: var(--darkgray);
+  font-family: "Source Code Pro", monospace;
 }
 
 /* color set for "h" & "p" elements */
@@ -23,202 +23,202 @@ h1,
 h2,
 h3,
 p {
-    color: var(--white);
+  color: var(--white);
 }
 
 header {
-    position:-webkit-sticky;
-    position:sticky;
-    top:0;
-    width: 100%;
-    background-color: var(--lightgray);
-    border-style: solid;
-    text-align:start 
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 0;
+  width: 100%;
+  background-color: var(--lightgray);
+  border-style: solid;
+  text-align: start;
 }
 
 /* CSS style for page title section in the header */
 header .page-title {
-    padding: 0px 25px;
-
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
-header .my-picture{
-    display: inline-block;
-    position: absolute;
-    height: 60%;
-    top: 10px;
-    right: 25px;
+.my-picture {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
 }
-
 
 /* CSS style for navegation bar and elements */
 header .navegation-bar {
-    padding: 0 px;
-    margin: 0px;
-    border-top-style: dashed;
+  padding: 0 px;
+  margin: 0px;
+  border-top-style: dashed;
 }
 
 .navegation-bar ul {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .navegation-bar ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .navegation-bar a {
-    color: var(--lightred);
-    font-weight: bolder;
-    text-decoration: none;
+  color: var(--lightred);
+  font-weight: bolder;
+  text-decoration: none;
 }
 
-.navegation-bar a::before{
-    content: "<";
+.navegation-bar a::before {
+  content: "<";
 }
 
-.navegation-bar a::after{
-    content: "/>";
+.navegation-bar a::after {
+  content: "/>";
 }
 
-.navegation-bar a:hover{
-    color: var(--orange);
-
+.navegation-bar a:hover {
+  color: var(--orange);
 }
 /* main section */
 
 article::before {
-    display: block;
-    content: ' ';
-    margin-top: -180px;
-    height: 180px;
-    visibility: hidden;
-    pointer-events: none;
-  }
+  display: block;
+  content: " ";
+  margin-top: -180px;
+  height: 180px;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-main .display-section{ 
-   width: 80%;
-   /* height: auto;  */
-   margin: 0% 10%; 
+main .display-section {
+  width: 80%;
+  /* height: auto;  */
+  margin: 0% 10%;
 }
 
 /* This is the image that appeart when the user enter the website */
-.display-section .workstation{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%;
+.display-section .workstation {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
 }
 
-.display-section  h2{
-    text-decoration: underline;
-} 
+.display-section h2 {
+  text-decoration: underline;
+}
 
-#about-me, #skills, #projects, #contact{
-    border-bottom-style: dashed;
-    padding-bottom:10px;
-    
+#about-me,
+#skills,
+#projects,
+#contact {
+  border-bottom-style: dashed;
+  padding-bottom: 10px;
 }
 
 /* Skills article */
- 
-#skills li{
-    color: var(--white);
+
+#skills li {
+  color: var(--white);
 }
 
 .skills2 {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.skills2 > section{
-    margin: 0px 30px;
+.skills2 > section {
+  margin: 0px 30px;
 }
 
 /* Projects article */
 
-.projects-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.projects-container img{
-    width: 20em;
-    height: 10em;
-    padding: 1em;
+.projects-container img {
+  width: 20em;
+  height: 10em;
+  padding: 1em;
 }
 
-.projects-container a img:hover{
-    width: 30em;
-    height: 20em; 
+.projects-container a img:hover {
+  width: 25em;
+  height: 15em;
 }
 
 /* Contact and form */
 
 .contact-form {
-    border-radius: 5px;
-    background-color: var(--lightgray);
-    padding: 20px;
-    color: var(--white);
-    display: flex;
-    flex-direction: row;
+  border-radius: 5px;
+  background-color: var(--lightgray);
+  padding: 20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
 }
 
-.contact-form  div {
-    margin-bottom: 20px;
+.contact-form div {
+  margin-bottom: 20px;
 }
 
-
-input[type=text], input[type=email], textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+form > div {
+  display: flex;
+  justify-content: center;
 }
 
-input[type=submit]{
-    background-color: var(--lightred);
-    color: var(--orange);
-    border-style: dashed;
-    border-radius: 4px;
-    cursor: pointer;
+form > div > label {
+  width: 150px;
 }
 
+button {
+  cursor: pointer;
+}
 
 /* CSS for footer section */
 
 footer {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    background-color: var(--lightgray);
-    border-style: solid;
-    padding: 0px 25px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--lightgray);
+  border-style: solid;
+  padding: 0px 25px;
 }
 
-.contact-links{
-    display: flex;
-    justify-content:space-around;
-    flex: 0 1 auto;
-    flex-wrap: wrap;
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
 }
 
-.smlink{
-    height: 40px;
-    width: 40px;
+.smlink {
+  height: 40px;
+  width: 40px;
 }
 
 /* Media queries */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-/* h1,
+  /* header .page-title {
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+  } */
+
+  /* h1,
 h2,
 h3,
 p {
@@ -228,7 +228,7 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* h1,
+  /* h1,
     h2,
     h3,
     p {

@@ -1,4 +1,11 @@
-## HOMEWORK #2 - PORTFOLIO - PABLO ZAMBRANO
+# HOMEWORK #2 - PORTFOLIO - PABLO ZAMBRANO
+
+Page of the deployed app:
+
+'''
+https://pfzm.github.io/HMW2/
+
+'''
 
 
 ## User Story
@@ -36,7 +43,29 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Normarlize.CSS from: https://necolas.github.io/normalize.css/
 ```
 
+## Issues found:
+
+- The display of the "articles' when the links are click in the nav bar wasn't showing propperly as the header is set with an sticky position. meaning the 'main' was offset. After doing some research this was fix adding the following code:
+
+```
+article::before {
+    display: block;
+    content: ' ';
+    margin-top: -180px;
+    height: 180px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+```
+
+
+
 ## Future updates that needs to be done:
 
--Update poject section with my projects
--Update CV and Linked in
+- Form needs to be fix need to be functional
+
+- Font Size looks to small on mobile devices.
+
+- Update poject section with my projects
+
+- Update CV and LinkedIN
