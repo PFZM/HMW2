@@ -208,30 +208,12 @@ footer {
 
 /* Media queries */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up)
 @media only screen and (min-width: 600px) {
-  /* header .page-title {
-    padding: 0px 25px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-  } */
-
-  /* h1,
-h2,
-h3,
-p {
-    font-size: 2vw;
-} */
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* h1,
-    h2,
-    h3,
-    p {
-        font-size: 1vw;
-    }     */
-}
+/* @media only screen and (min-width: 768px) {
+ 
+} */
