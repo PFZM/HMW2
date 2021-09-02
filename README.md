@@ -35,3 +35,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 Normarlize.CSS from: https://necolas.github.io/normalize.css/
 ```
+
+## Future updates that needs to be done:
+
+-Update poject section with my projects
+-Update CV and Linked in
