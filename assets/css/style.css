@@ -101,7 +101,7 @@ main .display-section {
 }
 
 /* This is the image that appeart when the user enter the website */
-.display-section .workstation {
+.workstation {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -207,13 +207,18 @@ footer {
 }
 
 /* Media queries */
+/* 
+  mobile < 600px
+  tablet 600 - 800
+  laptop > 800px
 
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
-  
+*/
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+  .workstation {
+    display: none;
+  }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
- 
-} */
