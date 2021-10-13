@@ -2,56 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PFZM|Pablo Zambrano|Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>PFZM|Pablo Zambrano|Portfolio</title>
   </head>
   <body>
-    <!-- Header section with name, image and nav bar -->
+    <!-- Header section with name and image-->
     <header>
-      <section class="page-title">
-        <div class="name">
-          <h1>Pablo Zambrano | Portfolio</h1>
-          <h2>
-            Full Stack Developer -
-            <span style="font-style: italic">In progress</span>-
-          </h2>
-        </div>
-        <div class="image">
-          <img
-            class="my-picture"
-            src="assets/images/IMG1 - myself.jpeg"
-            alt="Pablo Picture"
-          />
-        </div>
-      </section>
-      <!-- Nav bar: About me, Skills, Projects, Contact    -->
-      <nav class="navegation-bar">
-        <ul>
-          <li><a href="#about-me">ABOUT ME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
+      <div class="name">
+        <h1>Pablo Zambrano | Portfolio</h1>
+        <h2>
+          Full Stack Developer -
+          <span style="font-style: italic">In progress</span>-
+        </h2>
+      </div>
+      <img
+        class="my-picture"
+        src="assets/images/IMG1 - myself.jpeg"
+        alt="Pablo Picture"
+      />
     </header>
     <!-- Main section-->
     <main>
-      <section class="display-section">
+      <!-- Nav bar: About me, Skills, Projects, Contact    -->
+      <nav class="navegation-bar">
+        <ul id="items-navbar" class="items-nav">
+          <li id="about-me">ABOUT ME</li>
+          <li id="skills">SKILLS</ai>
+          <li id="projects">PROJECTS></li>
+          <li id="contact">CONTACT</li>
+        </ul>
+      </nav>
+
+      <section class="display-sections">
         <!-- This is the image that appeart when the user enter the website     -->
         <img
           class="workstation"
           src="assets/images/workstation.jpg"
           alt="workstation"
         />
-        <article id="about-me">
+        <section id="about-me" class=" hide">
           <h2>About Me:</h2>
           <p>
             I’m currently going through the Monash University Coding Bootcamp to
@@ -73,8 +70,8 @@
             <a href="#projects">projects</a> that I am working on and I look
             forward to connect with you.
           </p>
-        </article>
-        <article id="skills">
+        </section>
+        <section id="skills" class="hide">
           <h2>Skills</h2>
           <div class="skills2">
             <section class="tecskills">
@@ -98,13 +95,13 @@
               </ul>
             </section>
           </div>
-        </article>
-        <article id="projects">
+        </section>
+        <section id="projects" class="hide">
           <h2>Projects</h2>
           <div class="projects-container">
             <div>
               <p>Project 1 - Coming soon!</p>
-              <a href=""
+              <!-- <a href=""
                 ><img src="assets/images/project1.jpg" alt="Project 1" />
               </a>
             </div>
@@ -112,13 +109,13 @@
               <p>Project 2 - Coming soon!</p>
               <a href=""
                 ><img src="assets/images/project2.jpg" alt="Project 1" />
-              </a>
+              </a> -->
             </div>
           </div>
-        </article>
+        </section>
 
         <!-- Contact me article and form -->
-        <article id="contact">
+        <section id="contact" class="hide">
           <h2>Contact form</h2>
           <div class="contact-form">
             <form action="">
@@ -161,12 +158,12 @@
               <button type="submit">Submit</button>
             </form>
           </div>
-        </article>
+        </section>
       </section>
     </main>
     <!-- Footer section with contact details -->
     <footer>
-      <h3>Connect with me!</h3>
+      <h2>Connect with me!</h2>
       <section class="contact-links">
         <a href="https://github.com/PFZM">
           <img
@@ -196,7 +193,9 @@
             alt="CV Pablo Zambrano"
         /></a>
       </section>
-      <p>Mobile: +61 450 726 664</p>
+      <h3>Mobile: +61 450 726 664</h3>
     </footer>
+
+    <script src="./assets/Js/script.js"></script>
   </body>
 </html>

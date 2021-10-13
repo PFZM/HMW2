@@ -1,5 +1,7 @@
 /* Property to inlude the padding and border in element's total width and height */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -8,14 +10,15 @@
   --darkgray: #121212;
   --white: white;
   --lightgray: #3d3d3d;
-  --lightred: #b63c3c;
+  --lightred: #ff5252;
   --orange: #ffa500;
 }
 
-/* background set for body and font from Google fonts */
 body {
   background-color: var(--darkgray);
   font-family: "Source Code Pro", monospace;
+  font-size: 62.5%;
+  border-style: solid;
 }
 
 /* color set for "h" & "p" elements */
@@ -26,88 +29,106 @@ p {
   color: var(--white);
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-
-  top: 0;
-  width: 100%;
-  background-color: var(--lightgray);
-  border-style: solid;
-  text-align: start;
+p {
+  font-size: 2rem;
 }
 
-/* CSS style for page title section in the header */
-header .page-title {
-  padding: 0px 25px;
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: var(--lightgray);
+  width: 100%;
+  padding: 0.1rem 0;
+}
+
+.name {
+  align-self: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .my-picture {
-  width: 100px;
-  height: 100px;
-  margin-top: 10px;
+  padding: 1rem;
+  width: 8rem;
+  height: 10rem;
 }
 
-/* CSS style for navegation bar and elements */
-header .navegation-bar {
-  padding: 0 px;
-  margin: 0px;
+.workstation {
+  width: 100%;
+}
+
+/* CSS style for navegation bar and elements*/
+
+.navegation-bar {
   border-top-style: dashed;
+  border-bottom-style: dashed;
 }
 
 .navegation-bar ul {
   display: flex;
   justify-content: space-evenly;
+  padding: 0.3rem;
+  font-size: 0.9rem;
 }
 
-.navegation-bar ul li {
-  list-style: none;
-}
-
-.navegation-bar a {
+.items-nav li {
   color: var(--lightred);
   font-weight: bolder;
   text-decoration: none;
+  list-style: none;
 }
 
-.navegation-bar a::before {
+.items-nav li::before {
   content: "<";
 }
 
-.navegation-bar a::after {
+.items-nav li::after {
   content: "/>";
 }
 
-.navegation-bar a:hover {
+.items-nav li:hover {
   color: var(--orange);
-}
-/* main section */
-
-article::before {
-  display: block;
-  content: " ";
-  margin-top: -180px;
-  height: 180px;
-  visibility: hidden;
-  pointer-events: none;
+  cursor: pointer;
 }
 
-main .display-section {
-  width: 80%;
-  /* height: auto;  */
-  margin: 0% 10%;
+.hide {
+  display: none;
 }
 
-/* This is the image that appeart when the user enter the website */
+.display-section {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
 .workstation {
-  display: block;
+  position: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75%;
+  max-width: 100%;
 }
 
+footer {
+  width: 100%;
+  background-color: var(--lightgray);
+  border-style: solid;
+  padding: 0.3rem 1rem;
+  font-size: 0.7rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 auto;
+  padding: 0.5rem 0;
+}
+
+.smlink {
+  height: 2rem;
+  width: 2rem;
+}
+
+/*
 .display-section h2 {
   text-decoration: underline;
 }
@@ -122,7 +143,7 @@ main .display-section {
 
 /* Skills article */
 
-#skills li {
+/* #skills li {
   color: var(--white);
 }
 
@@ -134,11 +155,11 @@ main .display-section {
 
 .skills2 > section {
   margin: 0px 30px;
-}
+} */
 
 /* Projects article */
 
-.projects-container {
+/* .projects-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -153,11 +174,11 @@ main .display-section {
 .projects-container a img:hover {
   width: 25em;
   height: 15em;
-}
+} */
 
 /* Contact and form */
 
-.contact-form {
+/* .contact-form {
   border-radius: 5px;
   background-color: var(--lightgray);
   padding: 20px;
@@ -180,31 +201,10 @@ form > div > label {
 }
 
 button {
-  cursor: pointer;
-}
+  cursor: pointer; */
+/* } */
 
 /* CSS for footer section */
-
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  background-color: var(--lightgray);
-  border-style: solid;
-  padding: 0px 25px;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: space-around;
-  flex: 0 1 auto;
-  flex-wrap: wrap;
-}
-
-.smlink {
-  height: 40px;
-  width: 40px;
-}
 
 /* Media queries */
 /* 
@@ -214,11 +214,15 @@ footer {
 
 */
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 20px;
-  }
-  .workstation {
-    display: none;
-  }
+/* Tablets */
+/* @media screen and (min-width: 620px) {
+  
+} */
+
+/* Laptop
+@media screen and (min-width: 960px) {
 }
+
+/*Desktops
+@media screen and (min-width: 1200px) {
+} */
